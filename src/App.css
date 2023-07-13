@@ -9,3 +9,6 @@
 .i4ewOd-pzNkMb-haAclf {
   background-color: #ffbc0d !important;
 }
+img {
+  image-rendering: optimizeSpeed;
+}
