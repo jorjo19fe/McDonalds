@@ -1,0 +1,31 @@
+.button {
+  align-self: center;
+  background-color: #ffbc0d;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 16px 23px;
+  position: relative;
+  right: -80%;
+}
+.title {
+  font-weight: 900;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  height: 20px;
+  width: 102%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  width: 55%;
+  height: 360px;
+  border-radius: 10px;
+  background-repeat: no-repeat !important;
+  padding: 40px;
+  background-position: center !important;
+  background-size: cover !important;
+  margin: 40px;
+}

@@ -1,0 +1,137 @@
+footer {
+  margin-top: 100px;
+  display: grid;
+  border-top: 1px solid #d6d6d6;
+
+}
+
+.top {
+  width: 60%;
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  padding: 50px 0%;
+  margin: 20px 0px 40px 0px;
+}
+
+.navigation {
+  color: #292929;
+  margin: 0px 0px 10px 0px;
+}
+
+.center ul {
+  display: grid;
+  grid-template-columns: 1.9fr 2.4fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 10%;
+  row-gap: 10%;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 20px 1px;
+  color: #505050;
+}
+.left {
+  margin: auto 10px auto 0px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bday button {
+  height: 85px;
+  width: 230px;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #ffbc0d;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0px;
+}
+.bday button:hover {
+  background-color: #ffbc0d;
+}
+
+.bday button .before {
+  content: "";
+  background-color: #fff;
+  height: 5px;
+  width: 53px;
+  position: absolute;
+  left: 16px;
+  bottom: -4px;
+}
+.bday button .after {
+  content: "";
+  background-color: #fff;
+  height: 5px;
+  width: 25px;
+  position: absolute;
+  left: 90px;
+  bottom: -4px;
+  z-index: 0;
+}
+.bday button img {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  z-index: 2;
+}
+.bday button p {
+  position: absolute;
+  left: 80px;
+  top: 20px;
+  height: 30px;
+  width: 140px;
+  font-weight: 900;
+  text-align: left;
+  font-size: 15px;
+}
+
+.right ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  width: 100%;
+}
+.right ul li {
+  height: 32px;
+  width: 32px;
+  background-color: #292929;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right ul li img {
+  height: 14px;
+}
+.bottom {
+  width: 100%;
+  height: 150%;
+  background-color: #ffbc0d;
+  display: grid;
+}
+
+.bottomFlex {
+  width: 60%;
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom p {
+  font-size: 14px;
+  font-weight: 700;
+}
+.bottomFlex div {
+  background-color: #db0007;
+  height: 100%;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+}

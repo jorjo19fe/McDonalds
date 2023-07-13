@@ -1,0 +1,44 @@
+.container {
+  background-color: #ffbc0d;
+  width: 1030px;
+  justify-self: center;
+  height: 130px;
+  padding: 40px;
+  border-radius: 10px;
+}
+.inner {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  height: 105%;
+}
+/* #ffbc0d; */
+.phoneHand img {
+  height: 330px;
+}
+.phoneHand {
+  position: relative;
+  bottom: 160px;
+}
+.downloads p {
+  font-size: 14px;
+}
+.downloads,
+.fc {
+  width: 30%;
+}
+.fc h1 {
+  font-size: 36px;
+}
+.outer {
+  position: relative;
+  z-index: -1;
+}
+.downloadButtons {
+  margin: 10%;
+  margin-left: 0px;
+}
+
+.downloadButtons img {
+  margin: 5px;
+}

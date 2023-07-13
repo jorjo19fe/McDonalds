@@ -1,0 +1,100 @@
+header {
+  max-height: 150px;
+  min-height: 62px;
+  justify-content: center;
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 2%;
+}
+.headerContent {
+  min-width: 60%;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.headerContent .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerContent .top .right {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.search {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 5px;
+}
+.search img {
+  margin: 2% 20%;
+}
+.left {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.left span {
+  padding: 10px;
+  font-weight: 500;
+}
+header .bottom {
+  height: 60%;
+  width: 100%;
+  padding: 1% 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .left {
+  width: 60%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+nav li {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+nav .right {
+  width: 40%;
+  height: 24px;
+}
+nav .right .restaurants div{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .restaurants img {
+  height: 24px;
+  margin: 0 5px;
+}
+.careers button {
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #ffbc0d;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
