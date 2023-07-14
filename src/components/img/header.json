@@ -1,0 +1,39 @@
+{
+  "products": [],
+  "about": [
+    {
+      "img": "https://mcdonalds.ge//assets/loaders/news.gif",
+      "link": "/news",
+      "title": "სიახლეები"
+    },
+    {
+      "img": "https://mcdonalds.ge/694ebcc30883-resized.jpg",
+      "link": "/happy-days",
+      "title": "McHappy Days"
+    },
+    {
+      "img": "https://mcdonalds.ge//assets/icons/pin.png",
+      "link": "/locations",
+      "title": "რესტორნები"
+    }
+  ],
+  "services": [
+    {
+      "img": "https://mcdonalds.ge//assets/loaders/drive.gif",
+      "link": "/mc-drive",
+      "title": "მაკდრაივი"
+    },
+    {
+      "img": "https://mcdonalds.ge//assets/images/drive.gif",
+      "link": "/mcdelivery",
+      "title": "მაკდელივერი"
+    },
+    {
+      "img": "https://mcdonalds.ge/77e4a23e17e0-resized.png",
+      "link": "/application",
+      "title": "აპლიკაცია"
+    }
+  ],
+  "family": [],
+  "exp": { "img": "", "link": "", "title": "" }
+}

@@ -12,6 +12,7 @@ import Loader from "./components/loader/Loader";
 import images from "./components/img/carouselData";
 import { HashRouter } from "react-router-dom";
 import ProductsData from "./components/img/ProductsData.json";
+import headerData from "./components/img/header.json";
 
 // გასაკეთებელია პროპს დინამიურად
 //
@@ -23,13 +24,10 @@ function App() {
     <div>
       <HashRouter>
         <div className="App">
-          <Header></Header>
+          <Header data={headerData}></Header>
           <Routes>
             <Route path="/" element={<Main images={images} />} />
-            <Route
-              path="/menu"
-              element={<Products data={ProductsData} />}
-            />
+            <Route path="/menu" element={<Products data={ProductsData} />} />
             <Route
               path="/product/:id"
               element={<EachProduct data={ProductsData} />}
