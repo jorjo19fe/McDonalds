@@ -3,23 +3,9 @@
   grid-template-columns: repeat(4, 25%);
   width: 65%;
   gap: 15px;
+  height: max-content;
 }
+
 .item {
   height: 185px;
-  border: 1px solid #ebebeb;
-  /* padding: 10%; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.item img {
-  height: 120px;
-}
-.item p {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 900;
 }

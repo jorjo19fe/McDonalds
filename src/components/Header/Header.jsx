@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Style from "./Styles/Style.module.css";
+import HoverContainer from "./components/HoverContainer/HoverContainer";
 
 export default function Header({ data }) {
-  let [searching, setSearching] = useState(false);
-  let [linkHover, setLinkHover] = useState("about");
-  let [containerkHover, setContainerkHover] = useState(false);
-  let [language, setLanguage] = useState("Geo");
-  let [languageLogic, setLanguageLogic] = useState(false);
+  const [searching, setSearching] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const [hoveredCont, setHoveredCont] = useState(false);
+  const [linkHover, setLinkHover] = useState("about");
+  const [language, setLanguage] = useState("Geo");
+  const [languageLogic, setLanguageLogic] = useState(false);
   function languageChange() {
     if (languageLogic) {
       setLanguage("Geo");
@@ -16,34 +18,21 @@ export default function Header({ data }) {
     }
     setLanguageLogic((prevState) => !prevState);
   }
-  function hoverStart({ target }) {
-    setLinkHover(target.attributes.name.value);
+
+  function hover() {
+    setHovered(true);
   }
-  function hoverEnd() {
-    setLinkHover("");
+
+  function unHover() {
+    setHovered(false);
   }
-  function HoverContainer({ data }) {
-    const tmpArr = data.map((item, index) => (
-      <div key={index} className={Style.eachLink}>
-        <Link to={item.link}>
-          <div className={Style.imgContainer}>
-            <img src={item.img} alt="" />
-          </div>
-          <p>{item.title}</p>
-        </Link>
-      </div>
-    ));
-    return <div className={Style.hoverConatiner}>{tmpArr}</div>;
-  }
+
   return (
     <header>
       <div className={Style.headerContent}>
         <section className={Style.top}>
           <div className={Style.left} onClick={languageChange}>
-            <img
-              src="https://mcdonalds.ge/assets/images/globe.svg"
-              fill="black"
-            />
+            <img src="https://mcdonalds.ge/assets/images/globe.svg" />
             <span>{language}</span>
           </div>
           <Link to="/">
@@ -70,8 +59,11 @@ export default function Header({ data }) {
                 <Link to="/menu">
                   <li
                     name="products"
-                    onMouseEnter={hoverStart}
-                    onMouseLeave={hoverEnd}
+                    onMouseEnter={({ target }) => {
+                      setLinkHover(target.attributes.name.value);
+                      hover();
+                    }}
+                    onMouseLeave={unHover}
                   >
                     ჩვენი პროდუქტები
                   </li>
@@ -79,21 +71,26 @@ export default function Header({ data }) {
                 <Link to="/about">
                   <li
                     name="about"
-                    onMouseEnter={hoverStart}
-                    onMouseLeave={hoverEnd}
+                    onMouseEnter={({ target }) => {
+                      setLinkHover(target.attributes.name.value);
+                      hover();
+                    }}
+                    onMouseLeave={unHover}
                   >
                     ჩვენ შესახებ
                   </li>
                 </Link>
                 <li
                   name="services"
-                  onMouseEnter={hoverStart}
-                  onMouseLeave={hoverEnd}
+                  onMouseEnter={({ target }) => {
+                    setLinkHover(target.attributes.name.value);
+                    hover();
+                  }}
+                  onMouseLeave={unHover}
                 >
                   ჩვენი სერვისები
                 </li>
                 <li>მთელი ოჯახისთვის</li>
-                {/* <li>მაკკაფე</li> */}
               </ul>
             </div>
             <div className={Style.right}>
@@ -108,23 +105,26 @@ export default function Header({ data }) {
             </div>
           </nav>
         </section>
-        {(containerkHover || linkHover != "") && (
+        {(hovered || hoveredCont) && (
           <section
             className={Style.headerHover}
             style={{
               height: "100%",
               width: "100%",
               position: "absolute",
-              top: "90%",
+              zIndex: 1,
+              top: "78%",
             }}
-            onMouseEnter={() => {
-              setContainerkHover(true);
-            }}
-            onMouseLeave={() => {
-              setContainerkHover(false);
-            }}
+            onMouseEnter={() => setHoveredCont(true)}
+            onMouseLeave={() => setHoveredCont(false)}
           >
-            <HoverContainer data={data[linkHover]} />
+            {data && (
+              <HoverContainer
+                hover={hover}
+                unHover={unHover}
+                data={data[linkHover]}
+              />
+            )}
           </section>
         )}
       </div>
