@@ -7,7 +7,7 @@ export default function Header({ data }) {
   const [searching, setSearching] = useState(false);
   const [hovered, setHovered] = useState(false);
   const [hoveredCont, setHoveredCont] = useState(false);
-  const [linkHover, setLinkHover] = useState("about");
+  const [linkHover, setLinkHover] = useState("");
   const [language, setLanguage] = useState("Geo");
   const [languageLogic, setLanguageLogic] = useState(false);
   function languageChange() {
@@ -68,7 +68,7 @@ export default function Header({ data }) {
                     ჩვენი პროდუქტები
                   </li>
                 </Link>
-                <Link to="/about">
+                <Link to="/locations">
                   <li
                     name="about"
                     onMouseEnter={({ target }) => {
@@ -95,7 +95,7 @@ export default function Header({ data }) {
             </div>
             <div className={Style.right}>
               <div className={Style.restaurants}>
-                <Link to="/about">
+                <Link to="/locations">
                   <div>
                     <img src="https://mcdonalds.ge/assets/icons/pin.png" />
                     <h4>რესტორნები</h4>

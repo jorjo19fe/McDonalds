@@ -26,7 +26,7 @@ export default function Footer() {
             <li>კარიერა</li>
             <li>აპლიკაცია</li>
             <li>სიახლეები</li>
-            <Link to="/about">
+            <Link to="/locations">
               <li>რესტორნები</li>
             </Link>
             <li>მომავლის გამოცდილება</li>

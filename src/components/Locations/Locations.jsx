@@ -2,11 +2,11 @@ import { useState } from "react";
 // import { Link } from "react-router-dom";
 import style from "./styles/style.module.css";
 
-export default function About() {
+export default function Locations() {
   document.title = "მაკდონალდს საქართველო";
   let x = document.getElementsByClassName("iframe").contentWindow;
   // x.document.getElementByClassName("i4ewOd-pzNkMb-haAclf");
-    console.log(x);
+  console.log(x);
   return (
     <div className={style.container}>
       {/* <div className={style.header}>

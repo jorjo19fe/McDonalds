@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Products from "./components/Products/Products";
 import EachProduct from "./components/EachProduct/EachProduct";
-import About from "./components/About/About";
+import Locations from "./components/Locations/Locations";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/loader/Loader";
 import images from "./components/img/carouselData";
@@ -32,7 +32,7 @@ function App() {
               path="/product/:id"
               element={<EachProduct data={ProductsData} />}
             />
-            <Route path="/about" element={<About />} />
+            <Route path="/locations" element={<Locations />} />
           </Routes>
           <Footer></Footer>
           <Loader></Loader>
