@@ -7,6 +7,7 @@ import Main from "./components/Main/Main";
 import Products from "./components/Products/Products";
 import EachProduct from "./components/EachProduct/EachProduct";
 import Locations from "./components/Locations/Locations";
+import Drive from "./components/Drive/Drive";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/loader/Loader";
 import images from "./components/img/carouselData";
@@ -33,6 +34,7 @@ function App() {
               element={<EachProduct data={ProductsData} />}
             />
             <Route path="/locations" element={<Locations />} />
+            <Route path="/mc-drive" element={<Drive />} />
           </Routes>
           <Footer></Footer>
           <Loader></Loader>

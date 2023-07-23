@@ -1,13 +1,24 @@
 .eachLink {
   margin: 2px 10%;
+  width: max-content;
 }
-
+.eachLink a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .eachLink:hover p {
   color: #ffbc0d;
 }
 
 .eachLink p {
   transition: 500ms;
+  font-size: 14px;
+  width: max-content;
+  text-align: center;
+  height: max-content;
+  font-weight: 600
 }
 
 .hoverConatiner {

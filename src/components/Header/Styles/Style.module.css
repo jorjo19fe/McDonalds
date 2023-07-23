@@ -4,7 +4,6 @@ header {
   justify-content: center;
   display: flex;
   border-bottom: 1px solid #ebebeb;
-  margin-bottom: 2%;
 }
 .headerContent {
   min-width: 60%;

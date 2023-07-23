@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   color: #292929;
+  font-family: "Quicksand", sans-serif;
 }
 /* .App{
   min-height: 100vh;
@@ -11,4 +12,8 @@
 }
 img {
   image-rendering: optimizeSpeed;
+}
+main{
+  margin-top: 2%;
+  
 }
