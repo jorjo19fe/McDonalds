@@ -8,18 +8,15 @@ import Products from "./components/Products/Products";
 import EachProduct from "./components/EachProduct/EachProduct";
 import Locations from "./components/Locations/Locations";
 import Drive from "./components/Drive/Drive";
+import AppPage from "./components/AppPage/AppPage";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/loader/Loader";
 import images from "./components/img/carouselData";
 import { HashRouter } from "react-router-dom";
 import ProductsData from "./components/img/ProductsData.json";
 import headerData from "./components/img/header.json";
+import appData from "./components/img/appData.json";
 
-// გასაკეთებელია პროპს დინამიურად
-//
-// მიღება გასაგებია
-//
-// გადაცემა გვინდა
 function App() {
   return (
     <div>
@@ -35,6 +32,7 @@ function App() {
             />
             <Route path="/locations" element={<Locations />} />
             <Route path="/mc-drive" element={<Drive />} />
+            <Route path="/application" element={<AppPage data={appData} />} />
           </Routes>
           <Footer></Footer>
           <Loader></Loader>

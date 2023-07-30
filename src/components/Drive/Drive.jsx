@@ -1,8 +1,8 @@
 import { useState } from "react";
+import VideoContent from "../VideoContent/VideoContent";
 import style from "./style.module.css";
 
 export default function Drive() {
-  const [clicked, setClicked] = useState(false);
   return (
     <div className={style.container}>
       <section className={style.header}>
@@ -39,16 +39,13 @@ export default function Drive() {
             </li>
           </ul>
         </div>
-        <div className={style.video}>
-          <div
-            className={style.playButton}
-            onClick={() => {
-              setClicked(true);
-            }}
-          >
-            <img src="https://mcdonalds.ge/assets/images/play.svg" alt="" />
-          </div>
-        </div>
+        <VideoContent
+          backgroundLink="https://mcdonalds.ge/356161295834-resized.jpg"
+          videoLink="https://www.youtube.com/embed/3kRYLq_qsAk"
+          width="100%"
+          height="350px"
+          curved
+        />
         <div className={style.app}>
           <aside>
             <h2>მობილური აპლიკაცია</h2>
@@ -75,25 +72,6 @@ export default function Drive() {
           />
         </div>
       </section>
-      {clicked ? (
-        <section className={style.videoContent}>
-          <div
-            onClick={() => {
-              setClicked(false);
-            }}
-          >
-            <img src="https://mcdonalds.ge/assets/images/close.png" alt="" />
-          </div>
-          <iframe
-            src="https://www.youtube.com/embed/3kRYLq_qsAk"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
-        </section>
-      ) : (
-        <></>
-      )}
     </div>
   );
 }

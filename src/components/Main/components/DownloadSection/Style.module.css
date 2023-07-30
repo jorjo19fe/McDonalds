@@ -1,6 +1,6 @@
 .container {
   background-color: #ffbc0d;
-  width: 1030px;
+  width: 55%;
   justify-self: center;
   height: 130px;
   padding: 40px;
@@ -23,9 +23,13 @@
 .downloads p {
   font-size: 14px;
 }
-.downloads,
-.fc {
+
+.fc{
   width: 30%;
+}
+
+.downloads {
+  width: 35%;
 }
 .fc h1 {
   font-size: 36px;

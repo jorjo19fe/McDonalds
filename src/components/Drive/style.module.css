@@ -9,7 +9,7 @@
   height: 330px;
   display: flex;
   justify-content: center;
-  margin: 20px 0px;
+  margin-bottom: 20px;
   align-items: center;
 }
 .header p {
@@ -38,28 +38,6 @@
 }
 .liItem p {
   font-size: 14px;
-}
-.video {
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  height: 350px;
-  background: url(https://mcdonalds.ge/356161295834-resized.jpg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  margin: 20px 0px;
-}
-.playButton {
-  cursor: pointer;
-  background-color: hsla(0, 0%, 100%, 0.5);
-  backdrop-filter: blur(30px);
-  height: 100px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
 }
 .app {
   margin-top: 30px;
@@ -95,35 +73,4 @@
   position: absolute;
   bottom: -36px;
   left: 50px;
-}
-.videoContent {
-  align-self: center;
-  justify-self: center;
-  width: 70%;
-  height: 590px;
-  position: fixed;
-  top: 30%;
-  display: flex;
-  justify-content: center;
-  z-index: 3;
-  align-items: center;
-}
-.videoContent iframe {
-  width: 80%;
-  height: 100%;
-  background-color: #fff;
-}
-.videoContent img {
-  height: 30px;
-  width: 30px;
-}
-.videoContent div {
-  background-color: #ffbc0d;
-  position: fixed;
-  z-index: 3;
-  top: 25%;
-  right: 18%;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
 }
