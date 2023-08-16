@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Style from "./Styles/Style.module.css";
+import Style from "./Styles/style.module.css";
 import HoverContainer from "./components/HoverContainer/HoverContainer";
 
 export default function Header({ data }) {
@@ -68,18 +68,16 @@ export default function Header({ data }) {
                     ჩვენი პროდუქტები
                   </li>
                 </Link>
-                <Link to="/locations">
-                  <li
-                    name="about"
-                    onMouseEnter={({ target }) => {
-                      setLinkHover(target.attributes.name.value);
-                      hover();
-                    }}
-                    onMouseLeave={unHover}
-                  >
-                    ჩვენ შესახებ
-                  </li>
-                </Link>
+                <li
+                  name="about"
+                  onMouseEnter={({ target }) => {
+                    setLinkHover(target.attributes.name.value);
+                    hover();
+                  }}
+                  onMouseLeave={unHover}
+                >
+                  ჩვენ შესახებ
+                </li>
                 <li
                   name="services"
                   onMouseEnter={({ target }) => {
@@ -109,8 +107,6 @@ export default function Header({ data }) {
           <section
             className={Style.headerHover}
             style={{
-              height: "100%",
-              width: "100%",
               position: "absolute",
               zIndex: 1,
               top: "78%",
@@ -118,13 +114,11 @@ export default function Header({ data }) {
             onMouseEnter={() => setHoveredCont(true)}
             onMouseLeave={() => setHoveredCont(false)}
           >
-            {data && (
-              <HoverContainer
-                hover={hover}
-                unHover={unHover}
-                data={data[linkHover]}
-              />
-            )}
+            <HoverContainer
+              hover={hover}
+              unHover={unHover}
+              data={data[linkHover]}
+            />
           </section>
         )}
       </div>

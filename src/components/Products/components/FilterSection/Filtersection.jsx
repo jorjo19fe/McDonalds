@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import style from "./Style.module.css";
+import { Link, useParams } from "react-router-dom";
 
-// data.js has to be changed
-
-export default function FilterSection({ filter, data }) {
-  const [selected, setSelected] = useState("");
-  // let [activeClass, setActiveClass] = ;
+export default function FilterSection({ filter, data, selected, setSelected }) {
+  let { id } = useParams();
   function filterSelect(event) {
     filter(event.target.attributes.name.value);
     setSelected(event.target.attributes.name.value);
   }
+
   let filterList = data.map((item, key) => (
     <li
       key={key}
@@ -34,11 +33,11 @@ export default function FilterSection({ filter, data }) {
     </div>
   );
 }
-// Sandwiches
-// RollsSalads
-// Starters
-// Sauces
-// CafeDrinks
+// sandwiches
+// rollssalads
+// starters
+// sauces
+// cafedrinks
 // drinks
-// Desserts
-// Menu
+// desserts
+// menu

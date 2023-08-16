@@ -2,7 +2,7 @@ import { useState } from "react";
 import style from "./styles/style.css";
 import { useParams, redirect } from "react-router-dom";
 
-export default function Test({ data }) {
+export default function EachProduct({ data }) {
   const { id } = useParams();
   const renderingData = data.products.find((item) => item.id === id);
   if (renderingData) {

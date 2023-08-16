@@ -25,7 +25,8 @@ function App() {
           <Header data={headerData}></Header>
           <Routes>
             <Route path="/" element={<Main images={images} />} />
-            <Route path="/menu" element={<Products data={ProductsData} />} />
+            <Route path="/menu/" element={<Products data={ProductsData} />} />
+            <Route path="/menu/:id" element={<Products data={ProductsData} />} />
             <Route
               path="/product/:id"
               element={<EachProduct data={ProductsData} />}

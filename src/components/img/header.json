@@ -1,5 +1,56 @@
 {
-  "products": [],
+  "products": [
+    {
+      "link": "/menu/sandwiches",
+      "img": "https://mcdonalds.ge/b174a52c65d4-resized.jpg",
+      "title": "სენდვიჩები"
+    },
+    {
+      "link": "/menu/rollssalads",
+      "img": "https://mcdonalds.ge/9aa52fa0a2bd-resized.jpg",
+      "title": "როლები და სალათები"
+    },
+    {
+      "link": "/menu/starters",
+      "img": "https://mcdonalds.ge/2b454faa6f95.net-resizeimage-resized-resized.jpg",
+      "title": "ფრი და სტარტერები"
+    },
+    {
+      "link": "/menu/sauces",
+      "img": "https://mcdonalds.ge/74cb1d6bcd04-resized.jpg",
+      "title": "სოუსები და დრესინგები"
+    },
+    {
+      "link": "/menu/cafedrinks",
+      "img": "https://mcdonalds.ge/842c1486ab25-resized.png",
+      "title": "მაკკაფეს სასმელები"
+    },
+    {
+      "link": "/menu/drinks",
+      "img": "https://mcdonalds.ge/8e38c54afd6c.net-resizeimage%20(3)-resized-resized.jpg",
+      "title": "გამაგრილებელი სასმელები"
+    },
+    {
+      "link": "/menu/desserts",
+      "img": "https://mcdonalds.ge/b7ffe80dc06e-resized.jpg",
+      "title": "დესერტები"
+    },
+    {
+      "link": "/menu/menu",
+      "img": "https://mcdonalds.ge/fab1f6d43b32-resized.png",
+      "title": "მაკ-მენიუ"
+    },
+    {
+      "link": "/menu/mccafe",
+      "img": "https://mcdonalds.ge/d8955404ac0f-resized.png",
+      "title": "მაკკაფეს დესერტები"
+    },
+    {
+      "link": "/menu",
+      "img": "all",
+      "title": "სრული მენიუ"
+    }
+  ],
   "about": [
     {
       "img": "https://mcdonalds.ge//assets/loaders/news.gif",

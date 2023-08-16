@@ -57,7 +57,7 @@
   transition: 300ms;
 }
 
-button:hover,
+.button:hover,
 .allActive {
   background-color: #ffbc0d;
   border: transparent 1.5px solid;
