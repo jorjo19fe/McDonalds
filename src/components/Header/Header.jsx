@@ -86,7 +86,7 @@ export default function Header({ data }) {
                 >
                   ჩვენი სერვისები
                 </li>
-                <li>მთელი ოჯახისთვის</li>
+                {/* <li>მთელი ოჯახისთვის</li> */}
               </ul>
             </div>
             <div className={Style.right}>
