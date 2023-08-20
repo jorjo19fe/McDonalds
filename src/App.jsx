@@ -15,7 +15,7 @@ import images from "./components/img/carouselData";
 import { HashRouter } from "react-router-dom";
 import ProductsData from "./components/img/ProductsData.json";
 import headerData from "./components/img/header.json";
-import appData from "./components/img/appData.json";
+import appData from "./components/img/appData.js";
 
 function App() {
   return (

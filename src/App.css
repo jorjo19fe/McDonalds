@@ -1,8 +1,18 @@
+@font-face {
+  font-family: Speedee-Bold;
+  src: url(https://mcdonalds.ge/assets/fonts/mcdonalds/caps/Speedee-Bold-caps.woff2)
+    format("woff2");
+}
+@font-face {
+  font-family: Speedee-regular;
+  src: url(https://mcdonalds.ge/assets/fonts/mcdonalds/regular/Speedee-Regular.woff2)
+    format("woff");
+}
 * {
   padding: 0px;
   margin: 0px;
   color: #292929;
-  font-family: "Quicksand", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
 }
 /* .App{
   min-height: 100vh;
@@ -13,7 +23,6 @@
 img {
   image-rendering: optimizeSpeed;
 }
-main{
+main {
   margin-top: 2%;
-  
 }

@@ -56,7 +56,6 @@ export default function Header({ data }) {
           <nav>
             <div className={Style.left}>
               <ul>
-                <Link to="/menu">
                   <li
                     name="products"
                     onMouseEnter={({ target }) => {
@@ -67,7 +66,6 @@ export default function Header({ data }) {
                   >
                     ჩვენი პროდუქტები
                   </li>
-                </Link>
                 <li
                   name="about"
                   onMouseEnter={({ target }) => {

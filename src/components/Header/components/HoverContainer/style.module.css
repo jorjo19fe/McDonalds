@@ -13,7 +13,10 @@
 .eachLink:hover p {
   color: #ffbc0d;
 }
-
+.hoverConatiner p,
+.hoverConatiner button {
+  font-family: Speedee-Bold;
+}
 .eachLink p {
   transition: 500ms;
   font-size: 14px;
@@ -59,4 +62,5 @@
 .button:hover {
   background-color: #ffbc0d;
   border: transparent 1.5px solid;
+  color: #fff;
 }

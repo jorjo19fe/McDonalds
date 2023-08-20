@@ -16,6 +16,7 @@
   color: #fff;
   font-size: 28px;
   font-weight: 900;
+  font-family: Speedee-Bold;
   letter-spacing: 2px;
 }
 .section {
@@ -37,7 +38,11 @@
   width: 120px;
 }
 .liItem p {
+  font-family: Speedee-Regular;
   font-size: 14px;
+}
+.liItem h4 {
+  font-family: Speedee-Regular;
 }
 .app {
   margin-top: 30px;
@@ -57,6 +62,7 @@
 }
 .app h2 {
   width: 150px;
+  font-family: Speedee-Bold;
   font-size: 20px;
   font-weight: 900;
 }
@@ -72,5 +78,6 @@
 .cheese {
   position: absolute;
   bottom: -36px;
+  z-index: -1;
   left: 50px;
 }

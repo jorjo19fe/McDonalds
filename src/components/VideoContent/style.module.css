@@ -19,11 +19,9 @@
 }
 
 .videoContent {
-  align-self: center;
-  justify-self: center;
   position: fixed;
+  left: 20%;
   top: 30%;
-  display: flex;
   width: 70%;
   height: 590px;
   justify-content: center;
