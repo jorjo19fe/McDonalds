@@ -21,69 +21,78 @@ export default function Footer() {
             <Link to="/menu">
               <li>ჩვენი პროდუქტები</li>
             </Link>
-            <li>მაკმენიუ</li>
-            <li>მაკკაფე</li>
-            <li>კარიერა</li>
-            <li>აპლიკაცია</li>
-            <li>სიახლეები</li>
+            <Link to="/application">
+              <li>აპლიკაცია</li>
+            </Link>{" "}
             <Link to="/locations">
               <li>რესტორნები</li>
             </Link>
-            <li>მომავლის გამოცდილება</li>
-            <li>მაკდელივერი</li>
+            <Link to="/mc-drive">
+              <li>მაკდრაივი</li>
+            </Link>
           </ul>
         </div>
         <div className={style.right}>
           <div className={style.bday}>
-            <button
-              onMouseOver={() => {
-                setBorderStyle("none");
-              }}
-              onMouseLeave={() => {
-                setBorderStyle("");
-              }}
-            >
-              <div
-                className={style.before}
-                style={{ display: borderStyle }}
-              ></div>
+            <a href="https://mcdparty.ge">
+              <button
+                onMouseOver={() => {
+                  setBorderStyle("none");
+                }}
+                onMouseLeave={() => {
+                  setBorderStyle("");
+                }}
+              >
+                <div
+                  className={style.before}
+                  style={{ display: borderStyle }}
+                ></div>
 
-              <img
-                src="https://mcdonalds.ge/assets/images/tada.png"
-                alt="tada.png"
-              />
-              <p>დაჯავშნე დაბადების დღე</p>
-              <div
-                className={style.after}
-                style={{ display: borderStyle }}
-              ></div>
-            </button>
+                <img
+                  src="https://mcdonalds.ge/assets/images/tada.png"
+                  alt="tada.png"
+                />
+                <p>დაჯავშნე დაბადების დღე</p>
+                <div
+                  className={style.after}
+                  style={{ display: borderStyle }}
+                ></div>
+              </button>
+            </a>
           </div>
           <ul>
-            <li>
-              <img
-                src="https://mcdonalds.ge/assets/images/facebook.png"
-                alt="facebook.png"
-              />
-            </li>
-            <li>
-              <img
-                src="https://mcdonalds.ge/assets/images/instagram.png"
-                alt="instagram.png"
-              />
-            </li>
-            <li>
-              <img
-                src="https://mcdonalds.ge/assets/images/linkedin.png"
-                alt="linkedin.png"
-              />
-            </li>
-            <li>
-              <img
-                src="https://mcdonalds.ge/assets/images/youtube.png"
-                alt="youtube.png"
-              />
-            </li>
+            <a href="https://fb.com">
+              <li>
+                <img
+                  src="https://mcdonalds.ge/assets/images/facebook.png"
+                  alt="facebook.png"
+                />
+              </li>
+            </a>
+            <a href="https://instagram.com">
+              <li>
+                <img
+                  src="https://mcdonalds.ge/assets/images/instagram.png"
+                  alt="instagram.png"
+                />
+              </li>
+            </a>
+            <a href="https://linkedin.com">
+              <li>
+                <img
+                  src="https://mcdonalds.ge/assets/images/linkedin.png"
+                  alt="linkedin.png"
+                />
+              </li>
+            </a>
+            <a href="https://youtube.com">
+              <li>
+                <img
+                  src="https://mcdonalds.ge/assets/images/youtube.png"
+                  alt="youtube.png"
+                />
+              </li>
+            </a>
           </ul>
         </div>
       </div>
