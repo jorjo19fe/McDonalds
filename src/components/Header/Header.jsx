@@ -107,7 +107,7 @@ export default function Header({ data }) {
             style={{
               position: "absolute",
               zIndex: 1,
-              top: "78%",
+              top: "82%",
             }}
             onMouseEnter={() => setHoveredCont(true)}
             onMouseLeave={() => setHoveredCont(false)}

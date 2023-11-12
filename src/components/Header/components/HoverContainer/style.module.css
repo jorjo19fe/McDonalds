@@ -20,7 +20,7 @@
 .eachLink p {
   transition: 500ms;
   font-size: 14px;
-  width: max-content;
+  max-width: 150px;
   text-align: center;
   height: max-content;
   font-weight: 600;

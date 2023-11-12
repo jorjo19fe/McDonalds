@@ -151,4 +151,5 @@ a {
   border: 10px transparent solid;
   min-width: 100%;
   padding: 10px 0px;
+  z-index: 0;
 }
